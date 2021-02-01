@@ -1,8 +1,6 @@
 package pl.dkiszka.bankaccount.application.adapters
 
-import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import pl.dkiszka.bankaccount.application.app.AccountService
 
 /**
  * @author Dominik Kiszka {dominikk19}
@@ -13,9 +11,9 @@ import pl.dkiszka.bankaccount.application.app.AccountService
 class AccountConfiguration {
 
     //todo
-    @Bean
-    fun accountService(): AccountService = AccountService();
-
+//    @Bean
+//    fun accountService(): AccountService = AccountService();
+//
 
 
 }

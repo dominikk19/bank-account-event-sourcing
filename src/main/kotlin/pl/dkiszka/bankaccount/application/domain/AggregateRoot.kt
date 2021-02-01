@@ -1,6 +1,7 @@
 package pl.dkiszka.bankaccount.application.domain
 
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 /**

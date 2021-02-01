@@ -1,13 +1,7 @@
 package pl.dkiszka.bankaccount.application.adapters
 
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import pl.dkiszka.bankaccount.application.app.AccountService
-import pl.dkiszka.bankaccount.application.app.dto.CreateAccountDto
-import pl.dkiszka.bankaccount.application.app.dto.DepositDto
-import pl.dkiszka.bankaccount.application.app.dto.TransferDto
 
 /**
  * @author Dominik Kiszka {dominikk19}
@@ -16,21 +10,23 @@ import pl.dkiszka.bankaccount.application.app.dto.TransferDto
  */
 @RestController
 @RequestMapping("/account")
-class AccountController(private val accountService : AccountService) {
+class AccountController(
+    //private val accountService : AccountService
+    ) {
 
 
-    @PostMapping
-    fun create(@RequestBody createAccountDto : CreateAccountDto){
-        accountService.create(createAccountDto);
-    }
-
-    @PostMapping("/deposit")
-    fun deposit(@RequestBody depositDto: DepositDto){
-        accountService.deposit(depositDto)
-    }
-
-    @PostMapping("/transfer")
-    fun transfer(@RequestBody transferDto: TransferDto){
-        accountService.transfer(transferDto)
-    }
+//    @PostMapping
+//    fun create(@RequestBody createAccountDto : CreateAccountDto){
+//        accountService.create(createAccountDto);
+//    }
+//
+//    @PostMapping("/deposit")
+//    fun deposit(@RequestBody depositDto: DepositDto){
+//        accountService.deposit(depositDto)
+//    }
+//
+//    @PostMapping("/transfer")
+//    fun transfer(@RequestBody transferDto: TransferDto){
+//        accountService.transfer(transferDto)
+//    }
 }
